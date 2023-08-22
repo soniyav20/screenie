@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'main.dart';
+import '../main.dart';
 
 class DrawerHome extends StatefulWidget {
   const DrawerHome({Key? key}) : super(key: key);
@@ -55,9 +55,7 @@ class _DrawerHomeState extends State<DrawerHome> {
                   'Favourite',
                   style: TextStyle(color: Colors.white),
                 ),
-                onTap: () {
-                  selected = 2;
-                },
+                onTap: () {},
               ),
             ),
             Container(
@@ -73,9 +71,7 @@ class _DrawerHomeState extends State<DrawerHome> {
                   'Setup Tutorial',
                   style: TextStyle(color: Colors.white),
                 ),
-                onTap: () {
-                  selected = 3;
-                },
+                onTap: () {},
               ),
             ),
             Container(
@@ -91,9 +87,7 @@ class _DrawerHomeState extends State<DrawerHome> {
                   'Get Featured',
                   style: TextStyle(color: Colors.white),
                 ),
-                onTap: () {
-                  selected = 4;
-                },
+                onTap: () {},
               ),
             ),
             Container(
@@ -109,9 +103,7 @@ class _DrawerHomeState extends State<DrawerHome> {
                   'Follow on Instagram',
                   style: TextStyle(color: Colors.white),
                 ),
-                onTap: () {
-                  selected = 5;
-                },
+                onTap: () {},
               ),
             ),
             Container(
@@ -127,9 +119,7 @@ class _DrawerHomeState extends State<DrawerHome> {
                   'Join Telegram Group',
                   style: TextStyle(color: Colors.white),
                 ),
-                onTap: () {
-                  selected = 6;
-                },
+                onTap: () {},
               ),
             ),
             Container(
@@ -145,9 +135,7 @@ class _DrawerHomeState extends State<DrawerHome> {
                   'Settings',
                   style: TextStyle(color: Colors.white),
                 ),
-                onTap: () {
-                  selected = 7;
-                },
+                onTap: () {},
               ),
             ),
             Container(

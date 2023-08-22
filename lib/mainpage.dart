@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:screenie/categories.dart';
-import 'package:screenie/homepage.dart';
-import 'package:screenie/latest.dart';
-import 'package:screenie/popular.dart';
-import 'package:screenie/rated.dart';
+import 'package:screenie/home/categories.dart';
+import 'package:screenie/home/homepage.dart';
+import 'package:screenie/home/latest.dart';
+import 'package:screenie/home/popular.dart';
+import 'package:screenie/home/rated.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -14,6 +14,7 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   int _selectedIndex = 0;
+
   static const List<Widget> _widgetOptions = <Widget>[
     HomePage(),
     Latest(),
