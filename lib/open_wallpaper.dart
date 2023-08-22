@@ -175,19 +175,39 @@ class _OpenWallPaperState extends State<OpenWallPaper> {
                                     ),
                                   ],
                                 ),
-                                Column(
-                                  children: [
-                                    Icon(
-                                      Icons.download,
-                                      color: Colors.blue,
-                                      size: 40,
-                                    ),
-                                    Text(
-                                      "Download",
-                                      style: TextStyle(
-                                          color: Colors.white, fontSize: 15),
-                                    ),
-                                  ],
+                                InkWell(
+                                  onTap: () {
+                                    ScaffoldMessenger.of(context)
+                                        .showSnackBar(SnackBar(
+                                      padding: EdgeInsetsDirectional.only(
+                                          bottom:
+                                              AppBar().preferredSize.height *
+                                                  7),
+                                      backgroundColor: Colors.white,
+                                      duration:
+                                          new Duration(milliseconds: 1000),
+                                      content: Center(
+                                        child: Text(
+                                          "Downloaded Successfully!!!🥳🎉🎊",
+                                          style: TextStyle(color: Colors.black),
+                                        ),
+                                      ),
+                                    ));
+                                  },
+                                  child: Column(
+                                    children: [
+                                      Icon(
+                                        Icons.download,
+                                        color: Colors.blue,
+                                        size: 40,
+                                      ),
+                                      Text(
+                                        "Download",
+                                        style: TextStyle(
+                                            color: Colors.white, fontSize: 15),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                                 Column(
                                   children: [
