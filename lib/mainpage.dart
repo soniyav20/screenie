@@ -36,39 +36,40 @@ class _MainPageState extends State<MainPage> {
       ),
       bottomNavigationBar: Theme(
         data: Theme.of(context).copyWith(
-          canvasColor: Colors.black87,
+          canvasColor: Colors.black,
         ), // sets the inactive color of the `BottomNavigationBar`
         child: BottomNavigationBar(
-            backgroundColor: Colors.grey,
-            items: const <BottomNavigationBarItem>[
-              BottomNavigationBarItem(
-                icon: Icon(Icons.home),
-                label: "Home",
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.speaker_notes),
-                label: "Latest",
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.account_tree_sharp),
-                label: "Categories",
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.data_exploration),
-                label: "Popular",
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.stars_sharp),
-                label: "Rated",
-              ),
-            ],
-            type: BottomNavigationBarType.shifting,
-            currentIndex: _selectedIndex,
-            selectedItemColor: Colors.red,
-            unselectedItemColor: Colors.white60,
-            iconSize: 30,
-            onTap: _onItemTapped,
-            elevation: 5),
+          backgroundColor: Colors.grey,
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: "Home",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.speaker_notes),
+              label: "Latest",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.account_tree_sharp),
+              label: "Categories",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.data_exploration),
+              label: "Popular",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.stars_sharp),
+              label: "Rated",
+            ),
+          ],
+          type: BottomNavigationBarType.shifting,
+          currentIndex: _selectedIndex,
+          selectedItemColor: Colors.red,
+          unselectedItemColor: Colors.white,
+          iconSize: 30,
+          selectedLabelStyle: TextStyle(color: Colors.white),
+          onTap: _onItemTapped,
+        ),
       ),
     );
   }
